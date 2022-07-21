@@ -14,7 +14,14 @@
     "outDir": "./lib/",
     "sourceMap": true,
     "strictNullChecks": true,
-    "target": "ES5"
+    "target": "ES5",
+    "baseUrl": ".",
+    "paths": {
+      "Components/*": ["./src/components/*"],
+      "Constants/*": ["./src/constants/*"],
+      "Hooks/*": ["./src/hooks/*"],
+      "Shared/*": ["./src/shared/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": [

@@ -4,6 +4,7 @@ import { NeutralButtonProps } from "./NeutralButton";
 import { PrimaryButtonProps } from "./PrimaryButton";
 import { SecondaryButtonProps } from "./SecondaryButton";
 import styled from "styled-components";
+import { CheckIcon16 } from "Components/Icons";
 
 export default { title: "Buttons" };
 
@@ -11,7 +12,7 @@ const PrimaryTemplate = (args: PrimaryButtonProps) => {
   const { icon, ...props } = args;
   return (
     <ContainerThemes>
-      <PrimaryButton {...props} />
+      <PrimaryButton icon={icon && <CheckIcon16 fill="#666666" />} {...props} />
     </ContainerThemes>
   );
 };
@@ -19,14 +20,20 @@ export const Primary = PrimaryTemplate.bind({});
 Primary.args = {
   children: "Primary Button",
   disabled: false,
+  loading: false,
+  icon: false,
   size: "large",
+  iconPosition: "left",
 };
 
 const SecondaryTemplate = (args: SecondaryButtonProps) => {
   const { icon, ...props } = args;
   return (
     <ContainerThemes>
-      <SecondaryButton {...props} />
+      <SecondaryButton
+        icon={icon && <CheckIcon16 fill="#666666" />}
+        {...props}
+      />
     </ContainerThemes>
   );
 };
@@ -34,14 +41,16 @@ export const Secondary = SecondaryTemplate.bind({});
 Secondary.args = {
   children: "Secondary Button",
   disabled: false,
+  loading: false,
   size: "large",
+  icon: false,
 };
 
 const NeutralTemplate = (args: NeutralButtonProps) => {
   const { icon, ...props } = args;
   return (
     <ContainerThemes>
-      <NeutralButton {...props} />
+      <NeutralButton icon={icon && <CheckIcon16 fill="#666666" />} {...props} />
     </ContainerThemes>
   );
 };
@@ -49,7 +58,9 @@ export const Neutral = NeutralTemplate.bind({});
 Neutral.args = {
   children: "Neutral Button",
   disabled: false,
+  loading: false,
   size: "large",
+  icon: false,
 };
 
 const ContainerThemes = styled.div`

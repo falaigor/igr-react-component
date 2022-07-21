@@ -1,0 +1,42 @@
+.axr-icon {
+  display: inline-flex;
+
+  > svg * {
+    fill: var(--svg-fill-color);
+  }
+
+  &-8 {
+    height: 8px;
+    width: 8px;
+  }
+
+  &-12 {
+    height: 12px;
+    width: 12px;
+  }
+
+  &-16 {
+    height: 16px;
+    width: 16px;
+  }
+
+  &-1618 {
+    width: 16px;
+    height: 18px;
+  }
+
+  &-24 {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.axr-arrow-icon-svg {
+  float: right;
+  align-self: center;
+  transition: transform 300ms ease-in-out;
+
+  &.axr-facing-up {
+      transform: rotateX(-180deg);    
+  }
+}

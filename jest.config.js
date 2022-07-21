@@ -16,5 +16,5 @@ module.exports = {
     "**/?(*.)+(spec|test|tests).[tj]s?(x)",
   ],
   testPathIgnorePatterns: ["/node_modules/", "/.next/", "/.out/", "/public/"],
-  setupFilesAfterEnv: ["<rootDir>/.jest/setup-tests.js"],
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
 };

@@ -25,9 +25,9 @@
         "directory": "lib"
     },
     "scripts": {
-        "storybook": "start-storybook -p 6006 -s public",
+        "storybook": "start-storybook -p 6006 -s public tsconfig-paths/register",
         "build:storybook": "build-storybook -s public",
-        "start": "npm run storybook",
+        "start": "npm run storybook tsconfig-paths/register",
         "build": "tsc --build \"./tsconfig.json\"",
         "clean": "rm -rf ./lib",
         "test": "react-scripts test",
@@ -89,6 +89,7 @@
         "react-dom": "^18.2.0",
         "react-scripts": "5.0.1",
         "sass-loader": "^13.0.2",
+        "tsconfig-paths": "^4.0.0",
         "typescript": "^4.7.4",
         "web-vitals": "^2.1.0",
         "webpack": "^5.73.0"
