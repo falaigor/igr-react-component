@@ -2,6 +2,24 @@
     "name": "igr-react-component",
     "version": "0.1.1",
     "private": false,
+    "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/falaigor/igr-react-component.git"
+    },
+    "author": "falaigor",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/falaigor/igr-react-component/issues"
+    },
+    "homepage": "https://github.com/falaigor/igr-react-component#readme",
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib"
+    ],
     "scripts": {
         "start": "react-scripts start",
         "build": "tsc --build \"./tsconfig.json\"",
@@ -78,17 +96,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-    "main": "lib/index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/falaigor/igr-react-component.git"
-    },
-    "author": "falaigor",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/falaigor/igr-react-component/issues"
-    },
-    "homepage": "https://github.com/falaigor/igr-react-component#readme"
+    }
 }
