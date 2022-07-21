@@ -1,4 +1,5 @@
 export {
+  Button,
   PrimaryButton,
   SecondaryButton,
   NeutralButton
