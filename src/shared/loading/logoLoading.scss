@@ -1,0 +1,41 @@
+@import '../../constants/colors.scss';
+
+@keyframes stretchdelay {
+  0% {
+    transform: translateY(45px) translateX(-25px) skewX(150deg);
+  }
+  30%,
+  60% {
+    transform: translateY(0) translateX(0px) skewX(150deg);
+  }
+  90%,
+  100% {
+    transform: translateY(-45px) translateX(25px) skewX(150deg);
+  }
+}
+
+.axr-loading-container {
+  width: 66px;
+  height: 36px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1.8rem);
+
+  .axr-strip-loading {
+    background-color: rgb($primary-one);
+    width: 9px;
+    height: 100%;
+    margin-left: 10px;
+    animation: stretchdelay 3s infinite;
+
+    &.axr-strip-one {
+      animation-delay: -2s;
+    }
+    &.axr-strip-two {
+      animation-delay: -1.65s;
+    }
+    &.axr-strip-three {
+      animation-delay: -1.3s;
+    }
+  }
+}
