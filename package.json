@@ -1,12 +1,12 @@
 {
     "name": "igr-react-component",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "private": false,
     "author": "falaigor",
     "license": "ISC",
     "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
     "main": "./lib/index.js",
-    "types": "./lib/index.d.ts",
+    "types": "./lib/types/index.d.ts",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/falaigor/igr-react-component.git"
@@ -25,8 +25,8 @@
         "directory": "lib"
     },
     "scripts": {
-        "storybook": "start-storybook -p 6006 -s public ./src",
-        "build:storybook": "build-storybook",
+        "storybook": "start-storybook -p 6006 -s public",
+        "build:storybook": "build-storybook -s public",
         "start": "npm run storybook",
         "build": "tsc --build \"./tsconfig.json\"",
         "clean": "rm -rf ./lib",

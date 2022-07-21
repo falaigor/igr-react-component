@@ -11,3 +11,5 @@ public/styles.css
 public/styles.css.map
 .idea/
 storybook_dist
+/build
+/lib
