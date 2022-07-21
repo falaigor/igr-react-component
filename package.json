@@ -1,6 +1,6 @@
 {
     "name": "igr-react-component",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "private": false,
     "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
     "main": "lib/index.js",
