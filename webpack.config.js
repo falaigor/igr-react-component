@@ -7,9 +7,9 @@ module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
 
   return {
-    entry: ['./src/lib/index.ts'],
+    entry: ['./src/index.ts'],
     output: {
-      path: path.join(__dirname, 'dist'),
+      path: path.join(__dirname, 'lib'),
       filename: 'index.js',
       libraryTarget: 'commonjs'
     },
