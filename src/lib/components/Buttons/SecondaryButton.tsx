@@ -6,8 +6,6 @@ export interface SecondaryButtonProps
   extends React.HTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   disabled?: boolean;
-  icon?: ReactNode;
-  loading?: boolean;
   size?: "small" | "medium" | "large";
   [otherProps: string]: unknown;
 }
@@ -16,8 +14,6 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
   children,
   className,
   disabled,
-  icon,
-  loading,
   size = "large",
   ...otherProps
 }) => {
@@ -26,8 +22,6 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
     <Button
       className={mergedClassNames}
       disabled={disabled}
-      icon={icon}
-      loading={loading}
       size={size}
       {...otherProps}
     >
